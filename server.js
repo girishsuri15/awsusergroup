@@ -1,6 +1,5 @@
 'use strict';
 let express  = require('express');
-const orderdetail=require('./orderdetails');
 let app =  express();
 app.use(express.json())
 app.use(express.urlencoded({
