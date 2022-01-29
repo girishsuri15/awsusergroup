@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
- name: DemoApp
+ name: demoapp
  labels:
   app: DemoAppdeploy
 spec:
@@ -16,7 +16,7 @@ spec:
   spec:
    containers:
     - name: demoappcont
-      image: girishsuri/aggregator:5
+      image: girishsuri/dummydemo:1
       ports:
       - containerPort: 8080
 ---
